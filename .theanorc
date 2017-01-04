@@ -1,0 +1,21 @@
+[global]
+floatX = float32
+#device = gpu2
+print_active_device = True
+optimizer = fast_run
+allow_gc = False
+optimizer_excluding = low_memory
+force_device = False
+
+[dnn]
+enabled = auto
+
+[nvcc]
+fastmath = True
+optimizer_including = cudnn
+
+[lib]
+#cnmem = 1
+
+[blas]
+ldflags = -lopenblas
