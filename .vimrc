@@ -1,11 +1,32 @@
 " 參考資料：https://github.com/yangyangwithgnu/use_vim_as_ide
 
-" 更新时间：2016-03-30 12:15:21
+" (1)安裝vundle來管理plugin, 安裝完以後打開vim輸入 :PluginInstall 安裝
+"     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" (2)安裝powerline
+"     pip install --user powerline-status
+" (3)下載最新的 Powerline 字型以及 fontconfig 字型設定檔：
+"     wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+"     wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+" (4)將 PowerlineSymbols.otf 這個字型放進自己的字型目錄：(如果沒有~/.fonts/就自己建立)
+"     mv PowerlineSymbols.otf ~/.fonts/
+" (5)更新字型快取：
+"     fc-cache -vf ~/.fonts/
+" (6)將字型設定檔放進適當的目錄：(如果沒有~/.config/fontconfig/conf.d/就自己建立)
+"     mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+" (7)記錄 powerline 的安裝位置(Location:)，把路徑貼到下面的set rtp+=路徑/powerline/bindings/vim
+"     pip show powerline-status
+" (8)在bash使用powerline, 下面這串貼到bashrc
+"     POWERLINE_SCRIPT=第7步查到的路徑/powerline/bindings/bash/powerline.sh
+"     if [ -f $POWERLINE_SCRIPT ]; then
+"         source $POWERLINE_SCRIPT
+"     fi
+
 set encoding=utf8
 set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 set fileencoding=utf8
 set termencoding=utf8
 
+set rtp+=路徑/powerline/bindings/vim
 
 " 定义快捷键的前缀，即 <Leader>
 let mapleader=";"
