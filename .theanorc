@@ -1,6 +1,6 @@
 [global]
 floatX = float32
-#device = gpu2
+device = gpu
 print_active_device = True
 optimizer = fast_run
 allow_gc = False
