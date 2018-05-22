@@ -20,7 +20,8 @@
 "     if [ -f $POWERLINE_SCRIPT ]; then
 "         source $POWERLINE_SCRIPT
 "     fi
-
+" (9) 如果使用時出現 Taglist: Exuberant ctags not found in PATH. Plugin is not loaded. 
+"   安装ctags      命令：apt-get install ctags  
 set encoding=utf8
 set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 set fileencoding=utf8
