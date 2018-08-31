@@ -29,6 +29,15 @@ set termencoding=utf8
 
 set rtp+=路徑/powerline/bindings/vim
 
+" https://jeffkreeftmeijer.com/vim-number/
+" 顯示相對行號
+set number relativenumber
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
 " 定义快捷键的前缀，即 <Leader>
 let mapleader=";"
 
