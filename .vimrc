@@ -146,6 +146,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'suan/vim-instant-markdown'
 Plugin 'lilydjwg/fcitx.vim'
+Plugin 'Raimondi/delimitMate'
 
 " 插件列表结束
 call vundle#end()
@@ -315,12 +316,13 @@ let g:SignatureMap = {
 " >>
 " 标签列表
 
-" 设置 tagbar 子窗口的位置出现在主编辑区的左边
-let tagbar_left=1
+" 设置 tagbar 子窗口的位置出现在主编辑区的左边(=1), 右边(=0)
+let tagbar_left=0
 " 设置显示／隐藏标签列表子窗口的快捷键。速记：identifier list by tag
 nnoremap <Leader>ilt :TagbarToggle<CR>
+nmap <F8> :TagbarToggle<CR>
 " 设置标签子窗口的宽度
-let tagbar_width=32
+let tagbar_width=40
 " tagbar 子窗口中不显示冗余帮助信息
 let g:tagbar_compact=1
 " 设置 ctags 对哪些代码标识符生成标签
@@ -503,7 +505,7 @@ nmap <Leader>man :Man 3 <cword><CR>
 " 使用 NERDTree 插件查看工程文件。设置快捷键，速记：file list
 nmap <Leader>fl :NERDTreeToggle<CR>
 " 设置 NERDTree 子窗口宽度
-let NERDTreeWinSize=22
+let NERDTreeWinSize=50
 " 设置 NERDTree 子窗口位置
 let NERDTreeWinPos="right"
 " 显示隐藏文件
