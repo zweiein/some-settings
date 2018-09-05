@@ -321,6 +321,10 @@ let tagbar_left=0
 " 设置显示／隐藏标签列表子窗口的快捷键。速记：identifier list by tag
 nnoremap <Leader>ilt :TagbarToggle<CR>
 nmap <F8> :TagbarToggle<CR>
+" 開啓 tagbar 視窗時，游標直接切進子視窗
+let g:tagbar_autofocus=1
+" tagbar視窗顯示line no.
+let g:tagbar_show_linenumbers=-1
 " 设置标签子窗口的宽度
 let tagbar_width=40
 " tagbar 子窗口中不显示冗余帮助信息
