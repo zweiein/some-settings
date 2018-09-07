@@ -20,8 +20,15 @@
 "     if [ -f $POWERLINE_SCRIPT ]; then
 "         source $POWERLINE_SCRIPT
 "     fi
-" (9) 如果使用時出現 Taglist: Exuberant ctags not found in PATH. Plugin is not loaded. 
+" (9)如果使用時出現 Taglist: Exuberant ctags not found in PATH. Plugin is not loaded. 
 "   安装ctags      命令：apt-get install ctags  
+" (10)YouCompleteMe安裝完之後，記得把設定檔複製到home目錄：
+"       cd ~
+"       cp  ~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py .
+"   在flags這個list的最後加入kaldi路徑，就能自動補全kaldi function
+"      '-isystem',
+"      '/path/to/kaldi/src',
+
 set encoding=utf8
 set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 set fileencoding=utf8
@@ -138,6 +145,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/DrawIt'
 Plugin 'SirVer/ultisnips'
 Plugin 'Valloric/YouCompleteMe'
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 " Plugin 'derekwyatt/vim-protodef'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fholgado/minibufexpl.vim'
