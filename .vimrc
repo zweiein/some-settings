@@ -34,7 +34,7 @@ set fileencodings=ucs-bom,utf-8,utf-16,gbk,big5,gb18030,latin1
 set fileencoding=utf8
 set termencoding=utf8
 
-set rtp+=路徑/powerline/bindings/vim
+" set rtp+=路徑/powerline/bindings/vim
 
 " https://jeffkreeftmeijer.com/vim-number/
 " 顯示相對行號
