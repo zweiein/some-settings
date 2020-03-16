@@ -258,7 +258,9 @@ set shiftwidth=4
 set softtabstop=4
 
 " 貼上時不要自動縮排; 按F12就可以切換paste mode, F12 (開啟paste mode) -> 貼上內容 -> F12 (關閉paste mode)
+" 預設是打開的, 避免貼上之後排版歪掉
 set pastetoggle=<F12>
+set paste
 
 " 缩进可视化插件 Indent Guides
 " 随 vim 自启动
