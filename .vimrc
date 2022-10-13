@@ -128,6 +128,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tomasr/molokai'
+Plugin 'sickill/vim-monokai'
 Plugin 'vim-scripts/phd'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'octol/vim-cpp-enhanced-highlight'
@@ -135,7 +136,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'derekwyatt/vim-fswitch'
 Plugin 'kshenoy/vim-signature'
 Plugin 'vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines'
-Plugin 'majutsushi/tagbar'
+"Plugin 'majutsushi/tagbar'
 Plugin 'vim-scripts/indexer.tar.gz'
 Plugin 'vim-scripts/DfrankUtil'
 Plugin 'vim-scripts/vimprj'
@@ -144,8 +145,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-scripts/DrawIt'
 Plugin 'SirVer/ultisnips'
-Plugin 'Valloric/YouCompleteMe'
-let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+"Plugin 'Valloric/YouCompleteMe'
+"let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 " Plugin 'derekwyatt/vim-protodef'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fholgado/minibufexpl.vim'
@@ -162,9 +163,10 @@ filetype plugin indent on
 " <<<<
 
 " 配色方案
-set background=dark
+"set background=dark
 "colorscheme solarized
-colorscheme molokai
+"colorscheme molokai  " this background color was too dark
+colorscheme monokai   "the background color was more like sublime
 "colorscheme phd
 
 " >>
